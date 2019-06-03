@@ -16,8 +16,6 @@ class dlist {
     node* head() const { return _head; }
     node* tail() const { return _tail; }
 
-    // **** Implement ALL the following methods ****
-
     // Returns the node at a particular index (0 is the head). If n >= size()
     // return nullptr; if n < 0, return the head of the list.
     // Must run in O(n) time.
@@ -207,14 +205,12 @@ class dlist {
     int sz = 0;
 };
 
-// **** Implement ALL the following functions ****
-
 /* a == b
    Compares two lists for equality, returning true if they have the same
    elements in the same positions. (Hint: it is *not* enough to just compare
    pointers! You have to compare the values stored in the nodes.)
 
-   Must run in O(m) time, where m is the length of the shorter of the two lists.
+   Runs in O(m) time, where m is the length of the shorter of the two lists.
 */ 
 bool operator== (const dlist& a, const dlist& b){
 
@@ -244,7 +240,7 @@ bool operator== (const dlist& a, const dlist& b){
    Returns a new list consisting of all the elements of a, followed by all the
    elements of b (i.e., the list concatenation).
 
-   Must run in O(n) time in the length of the result.
+   Runs in O(n) time in the length of the result.
 */
 dlist operator+ (const dlist& a, const dlist& b){
 	dlist e;
@@ -274,7 +270,7 @@ dlist operator+ (const dlist& a, const dlist& b){
    Returns a new list that is the *reversal* of l; that is, a new list 
    containing the same elements as l but in the reverse order.
 
-   Must run in O(n) time. 
+   Runs in O(n) time. 
 */
 dlist reverse(const dlist& l){
 
